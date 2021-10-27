@@ -1,0 +1,34 @@
+{
+  "name": "cucumber",
+  "version": "1.0.0",
+  "description": "Cypress-cucumber project",
+  "scripts": {
+    "test": "npx cypress run",
+    "test-add": "./node_modules/.bin/cypress-tags run -e TAGS='@add'",
+    "test-delete": "./node_modules/.bin/cypress-tags run -e TAGS='@delete'",
+    "test-clear": "./node_modules/.bin/cypress-tags run -e TAGS='@clear'",
+    "test-overview": "./node_modules/.bin/cypress-tags run -e TAGS='@overview'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KirillKurganov/Cucumber.git"
+  },
+  "keywords": [
+    "Cypress",
+    "Cucumber",
+    "BDD"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KirillKurganov/Cucumber/issues"
+  },
+  "homepage": "https://github.com/KirillKurganov/Cucumber#readme",
+  "devDependencies": {
+    "cypress": "^8.6.0",
+    "cypress-cucumber-preprocessor": "^4.3.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
